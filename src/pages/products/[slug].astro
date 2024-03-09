@@ -1,0 +1,17 @@
+---
+import { products } from '@lib/data'
+import Layout from '@layouts/Layout.astro'
+import ProductDetail from '@components/ProductDetail.astro'
+import BackToHomeButton from '@components/BackToHomeButton.astro'
+
+const { slug } = Astro.params
+const product = products.find((product) => product.slug === slug)
+---
+
+<Layout title=`${product?.title}`>
+  <section class='w-full h-screen flex justify-center items-center relative'>
+    <BackToHomeButton />
+    <ProductDetail product={product} slug={slug} />
+  </section>
+</Layout>
+<style></style>

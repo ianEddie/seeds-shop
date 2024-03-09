@@ -1,0 +1,64 @@
+---
+import type { Product } from 'types'
+import FavoriteButton from './FavoriteButton'
+import { WeedIcon, ClockIcon, WeighIcon, MixIcon } from '@icons/index.astro'
+
+
+const { product, slug } = Astro.props
+---
+
+<article
+  class='size-2/3 flex shadow-2xl shadow-neutral-400 rounded-3xl'
+  transition:name=`product ${slug} box`
+>
+  <!--? Container one -->
+  <picture class='flex aspect-[7/10]'>
+    <img
+      src={product?.image}
+      alt=`Image of ${product?.title}`
+      class='object-cover rounded-l-3xl rounded-r-lg'
+      transition:name=`product ${slug} image`
+    />
+  </picture>
+  <!--? Container two -->
+  <div class='flex flex-col items-center justify-around p-5 relative'>
+    <FavoriteButton client:load product={product} />
+    <!-- Title -->
+    <h2 class='text-xl font-medium' transition:name=`product ${slug} title`>
+      {product?.title}
+    </h2>
+    <!-- Description -->
+    <p class='max-w-[90%] font-medium'>{product?.description}</p>
+    <!-- Info -->
+    <div class='w-full grid grid-cols-2 gap-7 px-5'>
+      <!-- part 1 -->
+      <picture class='picture'>
+        <WeedIcon class='icon text-green-700' />
+        <span>{product?.genotype}</span>
+      </picture>
+      <!-- part 2 -->
+      <picture class='picture'>
+        <MixIcon class='text-blue-700 icon' />
+        <span>{product?.mix}</span>
+      </picture>
+      <!-- part 3 -->
+      <picture class='picture'>
+        <ClockIcon class='text-red-700 icon' />
+        <span>{product?.time} dias</span>
+      </picture>
+      <!-- part 4 -->
+      <picture class='picture'>
+        <WeighIcon class='text-zinc-700 icon' />
+        <span>{product?.weight} g/m2</span>
+      </picture>
+    </div>
+  </div>
+</article>
+<style>
+  .picture {
+    @apply flex flex-col items-center text-center gap-2 text-sm font-medium;
+  }
+  .icon {
+    @apply size-7;
+  }
+</style>

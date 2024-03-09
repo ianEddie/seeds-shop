@@ -1,0 +1,35 @@
+---
+import { icons } from '@lib/hero-icons.astro'
+---
+
+<section class='h-[90vh] w-full grid grid-cols-2'>
+  <article class='flex flex-col items-center pt-32'>
+    <h1 class='text-[5em] uppercase font-titles'>
+      <span>Seeds</span>
+      <span>Shop</span>
+    </h1>
+    <p class='w-2/3 text-pretty'>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque explicabo
+      voluptatibus nisi perspiciatis praesentium eum odit, adipisci velit vero
+      natus iure possimus fuga eveniet culpa ab aperiam delectus libero
+      accusamus?
+    </p>
+    <nav class='flex justify-center gap-x-10 mt-20'>
+      {
+        icons.map((item) => (
+          <button>
+            <item.icon class='size-7 text-neutral-800' />
+          </button>
+        ))
+      }
+    </nav>
+  </article>
+  <!--  -->
+  <picture class='flex items-center mt-10'>
+    <img
+      src='../../public//images/hero-bg-2.jpg'
+      alt='Image of weed'
+      class='aspect-auto'
+    />
+  </picture>
+</section>

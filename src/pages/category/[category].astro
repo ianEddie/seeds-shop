@@ -1,0 +1,16 @@
+---
+import { products } from '@lib/data'
+import Layout from '@layouts/Layout.astro'
+import ProductItem from '@components/ProductItem.astro'
+
+const { category } = Astro.params
+const filteredProducts = products.filter(
+  (product) => product.category === category
+)
+---
+
+<Layout title={category}>
+  <section class='w-full h-screen bg-teal-500 flex justify-center pt-10'>
+    {filteredProducts.map((product) => <ProductItem product={product} />)}
+  </section>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import type { Product } from 'types'
+import '@fontsource/righteous'
+import Arrow from '@icons/arrow-up-right.astro'
+
+interface Props {
+  product: Product
+}
+
+const { product } = Astro.props
+const { title, slug, cogo, price } = product
+---
+
+<a href={`/products/${slug}`} transition:name=`product ${slug} box`>
+  <article class='h-[320px] w-[250px] flex flex-col relative rounded-3xl'>
+    <Arrow class='absolute right-3 top-2 size-8 text-neutral-500' />
+    <picture
+      class='bg-neutral-200 rounded-t-3xl flex items-center justify-center h-[60%]'
+    >
+      <img
+        src={cogo}
+        alt=''
+        class='h-auto w-auto drop-shadow-[0_10px_20px_rgba(0,0,0,0.7)]'
+      />
+    </picture>
+    <div class='flex flex-col gap-y-2 pt-6 pl-3'>
+      <span class='text-xl font-semibold'>{title}</span>
+      <div class='flex gap-x-1 text-lg font-medium'>
+        <span class='text-green-700'>$</span>
+        <span class='text-neutral-800'>{price}</span>
+      </div>
+    </div>
+  </article>
+</a>
+<style></style>
