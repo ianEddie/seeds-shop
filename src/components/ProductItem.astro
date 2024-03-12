@@ -11,11 +11,17 @@ const { product } = Astro.props
 const { title, slug, cogo, price } = product
 ---
 
-<a href={`/products/${slug}`} transition:name=`product ${slug} box`>
-  <article class='h-[320px] w-[250px] flex flex-col relative rounded-3xl'>
-    <Arrow class='absolute right-3 top-2 size-8 text-neutral-500' />
+<a
+  href={`/products/${slug}`}
+  transition:name=`product ${slug}`
+  class='h-[320px] w-[250px]'
+>
+  <article
+    class='h-full w-full flex flex-col relative rounded-3xl bg-gradient-to-b from-neutral-200 via-neutral-200/80'
+  >
+    <Arrow class='absolute right-3 top-2 size-8 text-neutral-600' />
     <picture
-      class='bg-neutral-200 rounded-t-3xl flex items-center justify-center h-[60%]'
+      class=' rounded-t-3xl flex items-center justify-center h-[60%]'
     >
       <img
         src={cogo}
@@ -24,7 +30,7 @@ const { title, slug, cogo, price } = product
       />
     </picture>
     <div class='flex flex-col gap-y-2 pt-6 pl-3'>
-      <span class='text-xl font-semibold'>{title}</span>
+      <span class='text-xl font-bold text-neutral-900'>{title}</span>
       <div class='flex gap-x-1 text-lg font-medium'>
         <span class='text-green-700'>$</span>
         <span class='text-neutral-800'>{price}</span>

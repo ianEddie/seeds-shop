@@ -1,3 +1,5 @@
+import MinusIcon from '@icons/MinusIcon'
+import PlusIcon from '@icons/PlusIcon'
 import { useStore } from '@store/cart'
 
 interface Props {
@@ -16,11 +18,21 @@ export default function ProductQty({ productId, quantity }: Props) {
     decreaseQuantity(productId)
   }
   return (
-    <div className='flex items-center justify-center gap-x-5 bg-slate-300'>
-      <div className='bg-green-400 flex gap-x-5 px-5 rounded-3xl'>
-        <button onClick={handleDecrement}>-</button>
+    <div className='flex items-center justify-center gap-x-5'>
+      <div className='flex gap-x-5 px-5 py-[3px] rounded-3xl'>
+        <button
+          onClick={handleDecrement}
+          className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
+        >
+          <MinusIcon />
+        </button>
         <span>{quantity}</span>
-        <button onClick={handleIncrement}>+</button>
+        <button
+          onClick={handleIncrement}
+          className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
+        >
+          <PlusIcon />
+        </button>
       </div>
     </div>
   )

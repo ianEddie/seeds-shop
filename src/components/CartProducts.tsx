@@ -5,16 +5,18 @@ export default function CartProducts() {
   const { cart } = useStore()
 
   return (
-    <div className='bg-red-200 w-full flex flex-col gap-y-5'>
-      <h4>Productos</h4>
+    <div className='w-full flex flex-col gap-y-5 flex-grow'>
+      <h4 className='font-bold text-lg '>Productos</h4>
       <div className='flex flex-col'>
         {cart.map((product) => (
           <div
             key={product.id}
-            className='flex gap-x-2 items-center relative bg-zinc-200 p-1'
+            className='flex gap-x-2 items-center relative p-1'
           >
             <WeedIconSmall />
-            <span className='font-medium'>{product.title}</span>
+            <span className='font-semibold text-neutral-800'>
+              {product.title}
+            </span>
           </div>
         ))}
       </div>

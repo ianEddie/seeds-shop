@@ -13,22 +13,22 @@ export default function FavoriteItem({ products }: Props) {
   const { subTotal } = useActions(price, quantity)
 
   return (
-    <div className='border-b-2 bg-cyan-200 border-b-neutral-400/50 grid grid-cols-4 pb-5 relative'>
+    <div className='bg-neutral-100/70 grid grid-cols-4 p-1 relative border border-neutral-500/70 shadow-lg shadow-neutral-900/30 rounded-r-2xl rounded-l-lg'>
       {/* Delete icon */}
       <CloseIcon id={id} />
       {/* Image */}
-      <picture className='h-32 aspect-square bg-red-200'>
+      <picture className='h-32 aspect-square'>
         <img src={image} alt='' className='h-full object-cover rounded-lg' />
       </picture>
       {/* Title */}
-      <div className='flex items-center justify-center bg-lime-200'>
+      <div className='flex items-center justify-center font-bold'>
         <h3>{title}</h3>
       </div>
       {/* Quantity */}
       <ProductQty productId={id} quantity={quantity} />
       {/* Price */}
-      <div className='flex items-center justify-center bg-blue-300'>
-        <span>$</span>
+      <div className='flex items-center justify-center font-bold gap-x-1'>
+        <span className='text-green-600'>$</span>
         <span>{subTotal}</span>
       </div>
     </div>

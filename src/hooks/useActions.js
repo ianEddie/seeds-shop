@@ -15,6 +15,11 @@ export function useActions(price, quantity) {
     )
   }
   const totalPrice = getTotalPrice()
+  //
+  const checkProductInCart = (product) => {
+    return cart.some((item) => item.id === product.id)
+  }
+
   // return
-  return { subTotal, totalPrice }
+  return { subTotal, totalPrice, checkProductInCart }
 }

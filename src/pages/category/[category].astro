@@ -10,7 +10,12 @@ const filteredProducts = products.filter(
 ---
 
 <Layout title={category}>
-  <section class='w-full h-screen bg-teal-500 flex justify-center pt-10'>
-    {filteredProducts.map((product) => <ProductItem product={product} />)}
+  <section class='min-h-screen flex flex-col items-center pt-20 gap-y-10 px-10'>
+    <h1 class='font-titles text-[2.5em] uppercase text-neutral-800'>
+      {category}
+    </h1>
+    <div class='flex flex-wrap gap-5'>
+      {filteredProducts.map((product) => <ProductItem product={product} />)}
+    </div>
   </section>
 </Layout>

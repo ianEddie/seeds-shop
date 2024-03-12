@@ -1,8 +1,17 @@
-<header class='w-full fixed top-0 right-0  bg-indigo-300 z-10'>
-  <nav class='w-full flex justify-center gap-x-10 p-2'>
-    <a href='/'>Home</a>
-    <a href='/category/fotoperiodicas'>Fotoperiodicas</a>
-    <a href='/category/autoflorecientes'>Autoflorecientes</a>
-    <a href='/favoritos'>Favoritos</a>
+---
+import AddToCartIcon from '@icons/AddToCartIcon'
+import WeedIcon from '@icons/WeedIcon.astro'
+---
+
+<header class='w-full fixed top-0 right-0 z-10'>
+  <nav
+    class='w-full flex justify-between items-center gap-x-10 pb-2 pt-4 px-10'
+  >
+    <a href='/'><WeedIcon class='size-7 text-green-600' /></a>
+    <div class='flex gap-x-10 font-semibold'>
+      <a href='/category/fotoperiodicas'>Fotoperiodicas</a>
+      <a href='/category/autoflorecientes'>Autoflorecientes</a>
+    </div>
+    <a href='/carrito'><AddToCartIcon /></a>
   </nav>
 </header>

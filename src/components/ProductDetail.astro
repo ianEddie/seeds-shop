@@ -1,34 +1,36 @@
 ---
 import type { Product } from 'types'
-import FavoriteButton from './FavoriteButton'
+import AddToCart from './AddToCart'
 import { WeedIcon, ClockIcon, WeighIcon, MixIcon } from '@icons/index.astro'
-
 
 const { product, slug } = Astro.props
 ---
 
 <article
-  class='size-2/3 flex shadow-2xl shadow-neutral-400 rounded-3xl'
+  class='bg-white w-[65%] min-h-[70%] flex shadow-2xl shadow-neutral-400 rounded-3xl'
   transition:name=`product ${slug} box`
 >
   <!--? Container one -->
-  <picture class='flex aspect-[7/10]'>
+  <picture class='w-1/3'>
     <img
       src={product?.image}
       alt=`Image of ${product?.title}`
-      class='object-cover rounded-l-3xl rounded-r-lg'
+      class='object-cover rounded-l-3xl rounded-r-lg h-full w-full'
       transition:name=`product ${slug} image`
     />
   </picture>
   <!--? Container two -->
-  <div class='flex flex-col items-center justify-around p-5 relative'>
-    <FavoriteButton client:load product={product} />
+  <div class='flex flex-col items-center justify-around p-5 relative w-2/3'>
+    <AddToCart client:load product={product} />
     <!-- Title -->
-    <h2 class='text-xl font-medium' transition:name=`product ${slug} title`>
+    <h2
+      class='text-xl font-bold text-neutral-900'
+      transition:name=`product ${slug} title`
+    >
       {product?.title}
     </h2>
     <!-- Description -->
-    <p class='max-w-[90%] font-medium'>{product?.description}</p>
+    <p class='max-w-[90%] font-semibold text-[15px]'>{product?.description}</p>
     <!-- Info -->
     <div class='w-full grid grid-cols-2 gap-7 px-5'>
       <!-- part 1 -->

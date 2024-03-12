@@ -1,17 +1,16 @@
 import CartProducts from './CartProducts'
 import CartTotalPrice from './CartTotalPrice'
+import PayButton from './PayButton'
 
 export default function Cart() {
   return (
-    <article className='bg-zinc-300 rounded-3xl flex flex-col justify-around relative flex-grow px-7 pt-5'>
-      <h3 className='font-bold text-lg opacity-80 absolute top-5'>
+    <article className='bg-neutral-50 border border-neutral-400 shadow-xl shadow-neutral-900/40 rounded-md flex flex-col justify-between items-center flex-grow px-7 py-5 gap-y-7'>
+      <h3 className='font-bold text-lg w-full text-center border-b border-neutral-500 pb-4'>
         Detalles del Pago
       </h3>
       <CartProducts />
       <CartTotalPrice />
-      <div className='bg-cyan-200'>
-        <button>Pagar</button>
-      </div>
+      <PayButton />
     </article>
   )
 }
