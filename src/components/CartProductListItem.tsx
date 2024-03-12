@@ -27,9 +27,9 @@ export default function FavoriteItem({ products }: Props) {
       {/* Quantity */}
       <ProductQty productId={id} quantity={quantity} />
       {/* Price */}
-      <div className='flex items-center justify-center font-bold gap-x-1'>
+      <div className='flex items-center justify-center gap-x-1'>
         <span className='text-green-600'>$</span>
-        <span>{subTotal}</span>
+        <span className='font-number text-sm text-neutral-700'>{subTotal}</span>
       </div>
     </div>
   )

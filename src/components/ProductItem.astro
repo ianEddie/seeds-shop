@@ -20,9 +20,7 @@ const { title, slug, cogo, price } = product
     class='h-full w-full flex flex-col relative rounded-3xl bg-gradient-to-b from-neutral-200 via-neutral-200/80'
   >
     <Arrow class='absolute right-3 top-2 size-8 text-neutral-600' />
-    <picture
-      class=' rounded-t-3xl flex items-center justify-center h-[60%]'
-    >
+    <picture class='rounded-t-3xl flex items-center justify-center h-[60%]'>
       <img
         src={cogo}
         alt=''
@@ -31,9 +29,9 @@ const { title, slug, cogo, price } = product
     </picture>
     <div class='flex flex-col gap-y-2 pt-6 pl-3'>
       <span class='text-xl font-bold text-neutral-900'>{title}</span>
-      <div class='flex gap-x-1 text-lg font-medium'>
-        <span class='text-green-700'>$</span>
-        <span class='text-neutral-800'>{price}</span>
+      <div class='flex items-center gap-x-1'>
+        <span class='text-green-700 font-bold'>$</span>
+        <span class='text-neutral-700 font-number'>{price}</span>
       </div>
     </div>
   </article>

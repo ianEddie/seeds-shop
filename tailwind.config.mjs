@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         primary: ['Righteous'],
-        titles: ['Martin-Demo']
+        titles: ['Martin-Demo'],
+        number: ['Audiowide']
       }
     }
   },

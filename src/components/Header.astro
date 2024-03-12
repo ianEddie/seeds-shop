@@ -1,5 +1,5 @@
 ---
-import AddToCartIcon from '@icons/AddToCartIcon'
+import HeaderCartIcon from '@components/HeaderCartIcon.tsx'
 import WeedIcon from '@icons/WeedIcon.astro'
 ---
 
@@ -8,10 +8,10 @@ import WeedIcon from '@icons/WeedIcon.astro'
     class='w-full flex justify-between items-center gap-x-10 pb-2 pt-4 px-10'
   >
     <a href='/'><WeedIcon class='size-7 text-green-600' /></a>
-    <div class='flex gap-x-10 font-semibold'>
+    <div class='flex gap-x-10 font-semibold text-[17px]'>
       <a href='/category/fotoperiodicas'>Fotoperiodicas</a>
       <a href='/category/autoflorecientes'>Autoflorecientes</a>
     </div>
-    <a href='/carrito'><AddToCartIcon /></a>
+    <HeaderCartIcon client:load />
   </nav>
 </header>

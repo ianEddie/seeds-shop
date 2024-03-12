@@ -26,7 +26,7 @@ export default function ProductQty({ productId, quantity }: Props) {
         >
           <MinusIcon />
         </button>
-        <span>{quantity}</span>
+        <span className='font-number  text-neutral-700'>{quantity}</span>
         <button
           onClick={handleIncrement}
           className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
