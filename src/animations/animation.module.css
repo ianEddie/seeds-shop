@@ -1,0 +1,14 @@
+.load {
+  animation: load;
+  animation-duration: 1s;
+}
+@keyframes load {
+  from {
+    scale: 0;
+    translate: 0 100px;
+  }
+  to {
+    scale: 1;
+    translate: 0 0;
+  }
+}

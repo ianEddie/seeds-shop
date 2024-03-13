@@ -6,10 +6,10 @@ const { product, slug } = Astro.props
 ---
 
 <article
-  class='bg-white w-[65%] min-h-[70%] flex shadow-2xl shadow-neutral-400 rounded-3xl'
+  class='bg-white sm:w-[65%] w-[90%] sm:min-h-[70%] min-h-[80%] flex sm:flex-row flex-col shadow-2xl shadow-neutral-400 rounded-3xl'
 >
   <!--? Container one -->
-  <picture class='w-1/3'>
+  <picture class='w-1/3 sm:flex hidden'>
     <img
       src={product?.image}
       alt=`Image of ${product?.title}`
@@ -17,19 +17,23 @@ const { product, slug } = Astro.props
     />
   </picture>
   <!--? Container two -->
-  <div class='flex flex-col items-center justify-around p-5 relative w-2/3'>
+  <div
+    class='flex flex-col items-center justify-around p-5 relative sm:w-2/3 sm:flex-grow-0 flex-grow'
+  >
     <AddToCart client:load product={product} />
     <!-- Title -->
-    <h2
-      class='text-xl font-bold text-neutral-900'
+    <h1
+      class='text-xl font-bold text-neutral-900 sm:w-auto w-full'
       transition:name=`product ${slug} title`
     >
       {product?.title}
-    </h2>
+    </h1>
     <!-- Description -->
-    <p class='max-w-[90%] font-semibold text-[15px]'>{product?.description}</p>
+    <p class='sm:max-w-[90%] font-semibold sm:text-[15px] text-[14.5px]'>
+      {product?.description}
+    </p>
     <!-- Info -->
-    <div class='w-full grid grid-cols-2 gap-7 px-5'>
+    <div class='w-full grid grid-cols-2 gap-7 sm:px-5'>
       <!-- part 1 -->
       <picture class='picture'>
         <WeedIcon class='icon text-green-700' />
@@ -59,6 +63,9 @@ const { product, slug } = Astro.props
   }
   .icon {
     @apply size-7;
+  }
+  span{
+    @apply sm:text-base text-xs
   }
   article {
     animation: load;

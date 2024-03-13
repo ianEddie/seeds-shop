@@ -9,10 +9,10 @@ import WeedIcon from '@icons/WeedIcon.astro'
   class='w-full fixed top-0 right-0 z-10'
 >
   <nav
-    class='w-full flex justify-between items-center gap-x-10 pb-2 pt-4 px-10'
+    class='w-full flex justify-between items-center sm:gap-x-10 pb-2 sm:pt-4 pt-5 sm:px-10 px-6'
   >
-    <a href='/'><WeedIcon class='size-7 text-green-600' /></a>
-    <div class='flex gap-x-10 font-semibold text-[17px]'>
+    <a href='/'><WeedIcon class='size-7' /></a>
+    <div class='flex sm:gap-x-10 gap-x-5 font-semibold sm:text-[17px] text-xs'>
       <a href='/category/fotoperiodicas'>Fotoperiodicas</a>
       <a href='/category/autoflorecientes'>Autoflorecientes</a>
     </div>
@@ -34,7 +34,7 @@ import WeedIcon from '@icons/WeedIcon.astro'
 
   @keyframes blur {
     to {
-      @apply backdrop-blur-[10px] bg-neutral-100 text-[15.5px];
+      @apply backdrop-blur-[10px] bg-neutral-100;
     }
   }
 </style>

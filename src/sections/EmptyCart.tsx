@@ -1,7 +1,11 @@
+import animation from '../animations/animation.module.css'
+
 export default function EmptyCart() {
   return (
     <section className='h-screen w-full flex items-center justify-center bg-neutral-200'>
-      <article className='w-1/4 h-[75%] bg-neutral-100/70 rounded-2xl shadow-xl shadow-neutral-900/30 border border-neutral-400 flex flex-col justify-center gap-y-10 items-center'>
+      <article
+        className={`${animation.load} w-1/4 h-[75%] bg-neutral-100/70 rounded-2xl shadow-xl shadow-neutral-900/30 border border-neutral-400 flex flex-col justify-center gap-y-10 items-center`}
+      >
         <svg
           className='size-20 text-red-500 drop-shadow-lg'
           xmlns='http://www.w3.org/2000/svg'

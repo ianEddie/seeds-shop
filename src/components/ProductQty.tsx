@@ -31,7 +31,7 @@ export default function ProductQty({ productId, quantity }: Props) {
           onClick={handleIncrement}
           className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
         >
-          <PlusIcon />
+          <PlusIcon className='size-5' />
         </button>
       </div>
     </div>

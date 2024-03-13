@@ -2,19 +2,19 @@
 import { icons } from '@lib/hero-icons.astro'
 ---
 
-<section class='h-[90vh] w-full grid grid-cols-2'>
-  <article class='flex flex-col items-center pt-32'>
-    <h1 class='text-[5em] uppercase font-titles'>
+<section class='sm:h-[90vh] h-screen w-full grid sm:grid-cols-2'>
+  <article class='flex flex-col sm:justify-normal justify-around items-center sm:pt-32 pt-10'>
+    <h1 class='text-[5em] uppercase font-titles sm:text-start text-center'>
       <span>Seeds</span>
       <span>Shop</span>
     </h1>
-    <p class='w-2/3 text-pretty'>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque explicabo
-      voluptatibus nisi perspiciatis praesentium eum odit, adipisci velit vero
-      natus iure possimus fuga eveniet culpa ab aperiam delectus libero
-      accusamus?
+    <p class='sm:w-2/3 w-[80%] text-pretty'>
+      En <strong class='text-green-600'>Seeds Shop</strong> nos dedicamos a ofrecer
+      semillas de marihuana excepcionales. Nuestro compromiso con la calidad y la
+      excelencia garantiza una experiencia de cultivo única. Descubre la diferencia
+      con nosotros y haz que tu jardín florezca.
     </p>
-    <nav class='flex justify-center gap-x-10 mt-20'>
+    <nav class='flex justify-center gap-x-10 sm:mt-20 mt-10'>
       {
         icons.map((item) => (
           <button>
@@ -25,7 +25,7 @@ import { icons } from '@lib/hero-icons.astro'
     </nav>
   </article>
   <!--  -->
-  <picture class='flex items-center mt-10'>
+  <picture class='sm:flex hidden items-center mt-10'>
     <img
       src='../../public//images/hero-bg-2.jpg'
       alt='Image of weed'
@@ -33,4 +33,3 @@ import { icons } from '@lib/hero-icons.astro'
     />
   </picture>
 </section>
-

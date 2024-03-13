@@ -13,7 +13,7 @@ const { title, slug, cogo, price } = product
 
 <a
   href={`/products/${slug}`}
-  class='h-[320px] w-[250px]'
+  class='h-[320px] w-[250px] rounded-3xl hover:scale-105 hover:-translate-y-3 hover:shadow-lg hover:shadow-neutral-400/70 transition-all duration-300'
 >
   <article
     class='h-full w-full flex flex-col relative rounded-3xl bg-gradient-to-b from-neutral-200 via-neutral-200/80'
@@ -26,7 +26,7 @@ const { title, slug, cogo, price } = product
         class='h-auto w-auto drop-shadow-[0_10px_20px_rgba(0,0,0,0.7)]'
       />
     </picture>
-    <div class='flex flex-col gap-y-2 pt-6 pl-3'>
+    <div class='flex flex-col gap-y-2 pt-6 pl-3 rounded-b-3xl'>
       <span class='text-xl font-bold text-neutral-900'>{title}</span>
       <div class='flex items-center gap-x-1'>
         <span class='text-green-700 font-bold'>$</span>

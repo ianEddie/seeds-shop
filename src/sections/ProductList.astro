@@ -4,7 +4,7 @@ import { products } from '@lib/data'
 ---
 
 <section
-  class='min-h-screen w-full py-16 px-10 flex flex-col flex-wrap items-center gap-y-10'
+  class='min-h-screen w-full sm:py-16 py-5 px-10 flex flex-col flex-wrap items-center gap-y-10'
 >
   <h1
     class='text-[3.5em] tracking-wider text-neutral-900 font-titles uppercase'
@@ -19,7 +19,7 @@ import { products } from '@lib/data'
   section {
     animation: reveal linear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 1% cover 20%;
   }
   @keyframes reveal {
     from {
