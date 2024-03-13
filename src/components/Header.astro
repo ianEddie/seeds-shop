@@ -3,7 +3,11 @@ import HeaderCartIcon from '@components/HeaderCartIcon.tsx'
 import WeedIcon from '@icons/WeedIcon.astro'
 ---
 
-<header class='w-full fixed top-0 right-0 z-10'>
+<header
+  transition:animate='none'
+  id='header'
+  class='w-full fixed top-0 right-0 z-10'
+>
   <nav
     class='w-full flex justify-between items-center gap-x-10 pb-2 pt-4 px-10'
   >
@@ -15,3 +19,22 @@ import WeedIcon from '@icons/WeedIcon.astro'
     <HeaderCartIcon client:load />
   </nav>
 </header>
+<style>
+  a {
+    @apply hover:scale-110 transition-all duration-300;
+  }
+
+  header,
+  nav a {
+    animation: blur linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 400px;
+    @apply rounded-b-3xl;
+  }
+
+  @keyframes blur {
+    to {
+      @apply backdrop-blur-[10px] bg-neutral-100 text-[15.5px];
+    }
+  }
+</style>

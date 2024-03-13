@@ -15,3 +15,22 @@ import { products } from '@lib/data'
     {products.map((product) => <ProductItem product={product} />)}
   </div>
 </section>
+<style>
+  section {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      translate: 0 200px;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+  }
+</style>

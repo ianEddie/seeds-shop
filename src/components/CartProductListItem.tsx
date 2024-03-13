@@ -1,7 +1,6 @@
 import CloseIcon from '@icons/CloseIcon'
 import type { Product } from 'types'
 import ProductQty from './ProductQty'
-import { useStore } from '@store/cart'
 import { useActions } from '@hooks/useActions'
 
 interface Props {
