@@ -1,11 +1,7 @@
-interface Props {
-  className: string
-}
-
-export default function PlusIcon({ className }: Props) {
+export default function PlusIcon() {
   return (
     <svg
-      className={`${className}`}
+      className='sm:size-5 size-4'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'
     >

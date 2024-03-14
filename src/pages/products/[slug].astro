@@ -9,7 +9,7 @@ const product = products.find((product) => product.slug === slug)
 
 <Layout title=`${product?.title}`>
   <section
-    class='bg-neutral-200 w-full h-screen flex justify-center items-center relative'
+    class='bg-neutral-200 w-full h-screen flex justify-center items-center sm:pt-0 pt-8'
   >
     <ProductDetail product={product} slug={slug} />
   </section>

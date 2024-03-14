@@ -5,8 +5,8 @@ export default function CartProducts() {
   const { cart } = useStore()
 
   return (
-    <div className='w-full flex flex-col gap-y-5 flex-grow overflow-auto scrollbar-thin scrollbar-thumb-neutral-200'>
-      <h4 className='font-bold text-lg '>Productos</h4>
+    <div className='w-full flex flex-col sm:gap-y-5 gap-y-2 flex-grow overflow-auto scrollbar-thin scrollbar-thumb-neutral-200'>
+      <h4 className='font-bold sm:text-lg text-sm'>Productos</h4>
       <div className='flex flex-col'>
         {cart.map((product) => (
           <div

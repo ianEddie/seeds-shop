@@ -18,20 +18,22 @@ export default function ProductQty({ productId, quantity }: Props) {
     decreaseQuantity(productId)
   }
   return (
-    <div className='flex items-center justify-center gap-x-5'>
-      <div className='flex gap-x-5 px-5 py-[3px] rounded-3xl'>
+    <div className='flex items-center justify-center'>
+      <div className='flex sm:gap-x-5 gap-x-2 sm:px-5 py-[3px] rounded-3xl'>
         <button
           onClick={handleDecrement}
           className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
         >
           <MinusIcon />
         </button>
-        <span className='font-number  text-neutral-700'>{quantity}</span>
+        <span className='font-number sm:text-base text-xs text-neutral-700'>
+          {quantity}
+        </span>
         <button
           onClick={handleIncrement}
           className='hover:scale-125 hover:text-black transition-all duration-300 text-neutral-800'
         >
-          <PlusIcon className='size-5' />
+          <PlusIcon />
         </button>
       </div>
     </div>

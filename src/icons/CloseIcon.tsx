@@ -9,9 +9,12 @@ export default function CloseIcon({ id }: Props) {
     removeFromCart(id)
   }
   return (
-    <button onClick={handleRemove} className='absolute top-3 right-4'>
+    <button
+      onClick={handleRemove}
+      className='absolute sm:top-3 top-2 sm:right-4 right-2'
+    >
       <svg
-        className='size-5'
+        className='sm:size-5 size-3'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 40 40'
       >

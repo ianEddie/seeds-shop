@@ -16,19 +16,19 @@ export default function FavoriteItem({ products }: Props) {
       {/* Delete icon */}
       <CloseIcon id={id} />
       {/* Image */}
-      <picture className='h-32 aspect-square'>
+      <picture className='sm:h-32 aspect-square'>
         <img src={image} alt='' className='h-full object-cover rounded-lg' />
       </picture>
       {/* Title */}
-      <div className='flex items-center justify-center font-bold'>
+      <div className='flex items-center justify-center font-bold sm:text-base text-xs text-center'>
         <h3>{title}</h3>
       </div>
       {/* Quantity */}
       <ProductQty productId={id} quantity={quantity} />
       {/* Price */}
-      <div className='flex items-center justify-center gap-x-1'>
+      <div className='flex items-center justify-center sm:text-sm text-xs gap-x-1'>
         <span className='text-green-600'>$</span>
-        <span className='font-number text-sm text-neutral-700'>{subTotal}</span>
+        <span className='font-number  text-neutral-700'>{subTotal}</span>
       </div>
     </div>
   )

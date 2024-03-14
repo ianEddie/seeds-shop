@@ -4,11 +4,8 @@ import PayButton from './PayButton'
 
 export default function Cart() {
   return (
-    <article
-      id='cart'
-      className='bg-neutral-50 border border-neutral-400 shadow-xl shadow-neutral-900/40 rounded-md flex flex-col justify-between items-center flex-grow px-7 py-5 gap-y-7'
-    >
-      <h3 className='font-bold text-lg w-full text-center border-b border-neutral-500 pb-4'>
+    <article className='bg-neutral-100 sm:h-auto h-[50%] border flex flex-col justify-between items-center sm:flex-grow px-7 sm:py-5 py-3 sm:gap-y-7 gap-y-2 border-neutral-400 shadow-xl shadow-neutral-900/40 sm:rounded-md rounded-xl'>
+      <h3 className='font-bold sm:text-lg text-sm w-full text-center border-b border-neutral-500 sm:pb-4 pb-2'>
         Detalles del Pago
       </h3>
       <CartProducts />
