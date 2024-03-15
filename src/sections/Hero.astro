@@ -3,7 +3,9 @@ import { icons } from '@lib/hero-icons.astro'
 ---
 
 <section class='sm:h-[90vh] h-screen w-full grid sm:grid-cols-2'>
-  <article class='flex flex-col sm:justify-normal justify-around items-center sm:pt-32 pt-10'>
+  <article
+    class='flex flex-col sm:justify-normal justify-around items-center sm:pt-32 pt-10'
+  >
     <h1 class='text-[5em] uppercase font-titles sm:text-start text-center'>
       <span>Seeds</span>
       <span>Shop</span>
@@ -25,11 +27,11 @@ import { icons } from '@lib/hero-icons.astro'
     </nav>
   </article>
   <!--  -->
-  <picture class='sm:flex hidden items-center mt-10'>
+  <picture class='sm:flex hidden justify-end items-center mt-14'>
     <img
-      src='../../public//images/hero-bg-2.jpg'
+      src='../../public/images/hero-bg.webp'
       alt='Image of weed'
-      class='aspect-auto'
+      class='h-[50%] w-auto aspect-auto'
     />
   </picture>
 </section>

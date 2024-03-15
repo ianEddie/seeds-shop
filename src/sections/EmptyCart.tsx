@@ -2,10 +2,7 @@ import animation from '../animations/animation.module.css'
 
 export default function EmptyCart() {
   return (
-    <section className='h-screen w-full bg-neutral-200'>
-      <article
-        className={`${animation.load} w-full h-full rounded-2xl shadow-xl shadow-neutral-900/30 border border-neutral-400 flex flex-col justify-center gap-y-10 items-center`}
-      >
+    <section className='h-screen w-full bg-neutral-200 flex flex-col items-center justify-center gap-y-10'>
         <svg
           className='size-20 text-red-500 drop-shadow-lg'
           xmlns='http://www.w3.org/2000/svg'
@@ -28,7 +25,6 @@ export default function EmptyCart() {
         >
           Volver
         </a>
-      </article>
     </section>
   )
 }
