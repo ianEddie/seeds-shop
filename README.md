@@ -1,54 +1,69 @@
-# Astro Starter Kit: Basics
+# Seeds Shop - Tienda online
 
-```sh
-npm create astro@latest -- --template basics
+#### Este proyecto fue creado con la finalidad de ofrecerle al cliente una demostración de un pequeño e-commerce para su negocio. En el mismo solo se contempla la funcionalidad y el aspecto visual. No cuenta con métodos de pago integrados.
+
+<img src='https://i.postimg.cc/d3r7V6z0/Macbook-Air-seeds-shop-vercel-app.png' style='margin-top:30px'>
+
+#### **Hecho con**
+
+   <article style='margin-top:30px; display: flex; align-items: end'>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' src='https://i.postimg.cc/vmCcC8Qf/Logos-Astro-Icon.png'>
+   <span style='font-size: 13px; margin-top:5px' >Astro</span>
+</div>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' src='https://i.postimg.cc/4yM9nJ6Q/Logos-React.png'>
+   <span style='font-size: 13px; margin-top:5px'>React</span>
+</div>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' src='https://i.postimg.cc/s2m92twH/Devicon-Typescript.png'>
+   <span style='font-size: 13px; margin-top:5px' >Typescript</span>
+</div>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' width='30' height='32' src='https://i.postimg.cc/DyrDnLCw/zustand.png'>
+   <span style='font-size: 13px; margin-top:5px' >Zustand</span>
+</div>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' src='https://i.postimg.cc/9XwfG6HK/Devicon-Tailwindcss.png'>
+   <span style='font-size: 13px; margin-top:5px' >Tailwind</span>
+</div>
+
+<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+   <img alt='Astro Logo' src='https://i.postimg.cc/mZFjTzYq/Skill-Icons-Vercel-Light.png'>
+   <span style='font-size: 13px; margin-top:5px' >Vercel</span>
+</div>
+</article>
+
+<p style='margin-top:30px'>El sitio esta construido enteramente con <strong>Astro</strong>, utilizando componentes de <strong>React</strong> para determinadas funcionalidades. Se implemento un Estado global para manejar las acciones de compras, el cual esta construido con <strong>Zustand</strong>, aprovenchando el uso del middleware 'persist' para guardar la informacion en LocalStorage. La aplicacion se encuentra desplegada con <strong>Vercel</strong>.</p>
+
+
+## Ejecutar Localmente
+
+Clonar el proyecto
+
+```bash
+  git clone https://link-to-project
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Ir a la ubicacion del proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+  cd my-project
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Instalar las dependencias
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+  pnpm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Iniciar el proyecto
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+  pnpm run dev
+```
