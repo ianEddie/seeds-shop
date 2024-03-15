@@ -6,41 +6,40 @@
 
 #### **Hecho con**
 
-   <article style='margin-top:30px; display: flex; align-items: end'>
+   <article style='margin-top:30px; display: flex; align-items: end; justify-content: space-around'>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/vmCcC8Qf/Logos-Astro-Icon.png'>
    <span style='font-size: 13px; margin-top:5px' >Astro</span>
 </div>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/4yM9nJ6Q/Logos-React.png'>
    <span style='font-size: 13px; margin-top:5px'>React</span>
 </div>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/s2m92twH/Devicon-Typescript.png'>
    <span style='font-size: 13px; margin-top:5px' >Typescript</span>
 </div>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' width='30' height='32' src='https://i.postimg.cc/DyrDnLCw/zustand.png'>
    <span style='font-size: 13px; margin-top:5px' >Zustand</span>
 </div>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/9XwfG6HK/Devicon-Tailwindcss.png'>
    <span style='font-size: 13px; margin-top:5px' >Tailwind</span>
 </div>
 
-<div style='display:flex; flex-direction:column; margin-right:20px; align-items: center'>
+<div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/mZFjTzYq/Skill-Icons-Vercel-Light.png'>
    <span style='font-size: 13px; margin-top:5px' >Vercel</span>
 </div>
 </article>
 
 <p style='margin-top:30px'>El sitio esta construido enteramente con <strong>Astro</strong>, utilizando componentes de <strong>React</strong> para determinadas funcionalidades. Se implemento un Estado global para manejar las acciones de compras, el cual esta construido con <strong>Zustand</strong>, aprovenchando el uso del middleware 'persist' para guardar la informacion en LocalStorage. La aplicacion se encuentra desplegada con <strong>Vercel</strong>.</p>
-
 
 ## Ejecutar Localmente
 
