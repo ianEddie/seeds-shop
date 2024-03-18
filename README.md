@@ -70,15 +70,16 @@ Iniciar el proyecto
 ```bash
   pnpm run dev
 ```
+
 ---
 
-<div style='display:flex; justify-content: space-around'>
-<div style='display:flex; flex-direction: column; '>
-<span>span</span>
+<div style='display:flex; justify-content: space-around; align-items: center'>
+<div style='display:flex; flex-direction: column; align-items:center; justify-content: center; '>
+<img alt='Astro Logo' src='https://i.postimg.cc/mZFjTzYq/Skill-Icons-Vercel-Light.png'>
 <strong>strong</strong>
 </div>
-<div style='display:flex; flex-direction: column; '>
-<span>span2</span>
+<div style='display:flex; flex-direction: column; align-items:center; justify-content: center '>
+<img alt='Astro Logo' src='https://i.postimg.cc/mZFjTzYq/Skill-Icons-Vercel-Light.png'>
 <strong>strong2</strong>
 </div>
 </div>
