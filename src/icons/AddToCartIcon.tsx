@@ -1,7 +1,7 @@
 export default function AddToCartIcon() {
   return (
     <svg
-      className='size-7 hover:scale-110 transition-all duration-300'
+      className='size-7'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'
     >

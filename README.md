@@ -4,9 +4,11 @@
 
 <img src='https://i.postimg.cc/d3r7V6z0/Macbook-Air-seeds-shop-vercel-app.png' style='margin-top:30px'>
 
+---
+
 #### **Hecho con**
 
-   <article style='margin-top:30px; display: flex; align-items: end; justify-content: space-around'>
+   <article style='margin-top:30px; display: flex; align-items: end; justify-content: space-around;text-align:center'>
 
 <div style='display:flex; flex-direction:column; align-items: center'>
    <img alt='Astro Logo' src='https://i.postimg.cc/vmCcC8Qf/Logos-Astro-Icon.png'>
@@ -41,6 +43,8 @@
 
 <p style='margin-top:30px'>El sitio esta construido enteramente con <strong>Astro</strong>, utilizando componentes de <strong>React</strong> para determinadas funcionalidades. Se implemento un Estado global para manejar las acciones de compras, el cual esta construido con <strong>Zustand</strong>, aprovenchando el uso del middleware 'persist' para guardar la informacion en LocalStorage. La aplicacion se encuentra desplegada con <strong>Vercel</strong>.</p>
 
+---
+
 ## Ejecutar Localmente
 
 Clonar el proyecto
@@ -66,3 +70,15 @@ Iniciar el proyecto
 ```bash
   pnpm run dev
 ```
+---
+
+<div style='display:flex; justify-content: space-around'>
+<div style='display:flex; flex-direction: column; '>
+<span>span</span>
+<strong>strong</strong>
+</div>
+<div style='display:flex; flex-direction: column; '>
+<span>span2</span>
+<strong>strong2</strong>
+</div>
+</div>

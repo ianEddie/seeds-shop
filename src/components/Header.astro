@@ -3,16 +3,12 @@ import HeaderCartIcon from '@components/HeaderCartIcon.tsx'
 import WeedIcon from '@icons/WeedIcon.astro'
 ---
 
-<header
-  transition:animate='none'
-  id='header'
-  class='w-full fixed top-0 right-0 z-10'
->
+<header transition:animate='none' class='w-full fixed top-0 right-0 z-10'>
   <nav
-    class='w-full flex justify-between items-center sm:gap-x-10 pb-2 sm:pt-4 pt-5 sm:px-10 px-6'
+    class='w-full flex justify-between items-center sm:gap-x-10 pb-2 sm:pt-4 pt-3 sm:px-10 sm:pr-0 pr-6 sm:pl-0 pl-2'
   >
-    <a href='/'><WeedIcon class='size-7' /></a>
-    <div class='flex sm:gap-x-10 gap-x-5 font-semibold sm:text-[17px] text-xs'>
+    <a href='/'><WeedIcon class='size-8 mb-1' /></a>
+    <div class='flex sm:gap-x-10 gap-x-5 font-semibold pt-1'>
       <a href='/category/fotoperiodicas'>Fotoperiodicas</a>
       <a href='/category/autoflorecientes'>Autoflorecientes</a>
     </div>
@@ -21,20 +17,19 @@ import WeedIcon from '@icons/WeedIcon.astro'
 </header>
 <style>
   a {
-    @apply hover:scale-110 transition-all duration-300;
+    @apply flex items-center justify-center hover:scale-110 transition-all duration-300;
   }
 
-  header,
-  nav a {
+  header {
     animation: blur linear both;
     animation-timeline: scroll(root block);
     animation-range: 0 400px;
-    @apply rounded-b-3xl;
+    @apply sm:text-sm text-[13px]
   }
 
   @keyframes blur {
     to {
-      @apply backdrop-blur-[10px] bg-neutral-100;
+      @apply backdrop-blur-[10px] text-[14px] bg-neutral-100 shadow-lg shadow-neutral-400/70;
     }
   }
 </style>
